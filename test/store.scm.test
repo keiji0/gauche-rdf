@@ -1,0 +1,61 @@
+(use gauche.test)
+
+(test-start "rdf.store")
+
+(use rdf.store)
+
+(test-module 'rdf.store)
+
+(test* "rdf-literal" #t
+       (object-equal? (make-rdf-literal "TEST" :lang "ja")
+                      (make-rdf-literal "TEST" :lang "en")))
+
+(with-module rdf.store
+  (export make-rdf-triple-index
+          rdf-triple-index-get
+          rdf-triple-index-push!
+          rdf-triple-index-delete!))
+                                      
+(test* "rdf-store-index (get push delete)" #t
+       (let ((index (make-rdf-triple-index 'subject))
+             (tri   (make-rdf-triple 'hoge 'bar "TEST")))
+         (rdf-triple-index-push! index 'hoge tri)
+         (and (eq? (car (rdf-triple-index-get index 'hoge)) tri)
+              (begin (rdf-triple-index-delete! index 'hoge tri)
+                     (null? (rdf-triple-index-get index 'hoge))))))
+
+(test* "rdf-store (make push delete merge match)" #t
+       (let* ((tri1 (make-rdf-triple 'a 'b "HOGE1"))
+              (tri2 (make-rdf-triple 'c 'b "BAR1"))
+              (tri3 (make-rdf-triple 'e 'f "HOGE2"))
+              (tri4 (make-rdf-triple 'c 'f "BAR2"))
+              (store1 (make-rdf-store (list tri1)))
+              (store2 (make-rdf-store (list tri3 tri4))))
+
+         (test* "match" #t
+                (and (eq? 'a
+                          (rdf-triple-subject (car (rdf-triple-match store1 'a 'b "HOGE1"))))
+                     (= 2
+                        (length (rdf-triple-match store2 #f 'f #f)))))
+
+         (test* "delete" #t
+                (begin (rdf-store-delete! store1 tri1)
+                       (null? (rdf-triple-match store1 #f #f #f))))
+
+         (test* "push" #t
+                (begin (rdf-store-push! store1 tri1)
+                       (rdf-store-push! store1 tri2)
+                       (= 2 (length (rdf-triple-match store1 #f 'b #f)))))
+         
+         (test* "merge" #t
+                (begin (rdf-store-merge! store1 (list store2))
+                       (= 2 (length (rdf-triple-match store1 'c #f #f)))))
+
+         (test* "store-delete" #t
+                (begin (rdf-triple-match-delete! store1 'c #f #f)
+                       (= 2 (length (rdf-triple-match store1 #f #f #f)))))
+         
+         #t
+         ))
+
+(test-end)

@@ -1,0 +1,11 @@
+#!/usr/bin/env gosh
+
+(add-load-path "./src")
+(use rdf.display)
+(use rdf.store)
+(use rdf.parser.xml)
+
+(define (main args)
+  (rdf-triple-display
+   (map (pa$ apply make-rdf-triple)
+        (rdf-xml-parse (standard-input-port)))))

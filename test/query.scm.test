@@ -1,0 +1,36 @@
+#!/usr/bin/env gosh
+(use gauche.test)
+(use rdf.store)
+(use rdf.striple)
+(use rdf.display)
+
+(test-start "rdf.query")
+
+(use rdf.query)
+
+(test-module 'rdf.query)
+
+(test* "rdf-query" '(peach)
+       (let ((store
+              (make-rdf-store
+               (append
+                (striple->triples '(k22 (name "Keiji Nagasako")
+                                        (look (under ant)
+                                              (left  book))
+                                        (eat  (today meat)
+                                              (yesterday curry))
+                                        (know k33))
+                                  make-rdf-triple)
+                (striple->triples '(k33 (name "Demon")
+                                        (eat  (today peach)
+                                              (yesterday ramen)))
+                                  make-rdf-triple)))))
+         ((rdf-query store
+                     '((?id name "Keiji Nagasako")
+                       (?id know ?who)
+                       (?who eat ?day)
+                       (?day today ?food)))
+          '?food)
+         ))
+
+(test-end)

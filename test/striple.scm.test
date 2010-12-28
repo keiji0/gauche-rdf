@@ -1,0 +1,32 @@
+(use gauche.test)
+(use util.match)
+
+(test-start "rdf.striple")
+
+
+(use rdf.striple)
+
+(test-module 'rdf.striple)
+
+(test* "striple->triples" '((a b c))
+       (striple->triples '(a (b c))))
+
+(test* "striple->triples" #t
+       (match (striple->triples '(a (b (c d))))
+         ((('a 'b x) (y 'c 'd))
+          (eq? x y))))
+
+(test* "striple->triples" '((a b c) (a e f))
+       (striple->triples '(a (b c) (e f))))
+
+(test* "striple->triples" #t
+       (match (striple->triples '(a (b c) (e (f g))))
+         ((('a 'b 'c)
+           ('a 'e x)
+           (y 'f 'g))
+          (eq? x y))))
+
+(test* "striple->triples" '(#(a b c))
+       (striple->triples '(a (b c)) vector))
+
+(test-end)

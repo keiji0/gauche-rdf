@@ -1,0 +1,13 @@
+#!/usr/bin/env gosh
+
+(add-load-path "./src")
+(use rdf.parser.xml)
+
+(define (main args)
+  (dolist (file (cdr args) 'done)
+    (call-with-input-file file
+      (cut rdf-xml-parse <>
+           :seed '()
+           :seed-proc
+           (lambda (seed sub pre obj . _)
+             (format #t "[~a, ~a, ~a]\n" sub pre obj))))))

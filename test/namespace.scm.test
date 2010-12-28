@@ -1,0 +1,20 @@
+(use gauche.test)
+
+(test-start "rdf.namespace")
+
+(use rdf.namespace)
+
+(test-module 'rdf.namespace)
+
+(test "qname->uri" 'http://www.example1.com/test
+      (lambda ()
+        (namespace-env
+          (make-namespace '((example1 "http://www.example1.com/")
+                            (example2 "http://www.example2.com/"))))
+        (qname->uri 'example1:test)))
+
+(test "uri->qname" 'example1:test
+      (lambda ()
+        (uri->qname 'http://www.example1.com/test)))
+
+(test-end)

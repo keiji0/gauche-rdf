@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:admin="http://webns.net/mvcb/"
+  xmlns:cc="http://web.resource.org/cc/"
+  xmlns="http://purl.org/rss/1.0/">
+
+<channel rdf:about="http://blog.scheme-a.com/">
+<title>scheme-a_design Weblog</title>
+<link>http://blog.scheme-a.com/</link>
+<description></description>
+<dc:language>en-us</dc:language>
+<dc:creator></dc:creator>
+<dc:date>2004-12-12T16:21:37+09:00</dc:date>
+<admin:generatorAgent rdf:resource="http://www.movabletype.org/?v=2.65" />
+
+
+<items>
+<rdf:Seq><rdf:li rdf:resource="http://blog.scheme-a.com/mt/archives/000963.html" />
+<rdf:li rdf:resource="http://blog.scheme-a.com/mt/archives/000962.html" />
+<rdf:li rdf:resource="http://blog.scheme-a.com/mt/archives/000961.html" />
+<rdf:li rdf:resource="http://blog.scheme-a.com/mt/archives/000960.html" />
+<rdf:li rdf:resource="http://blog.scheme-a.com/mt/archives/000959.html" />
+<rdf:li rdf:resource="http://blog.scheme-a.com/mt/archives/000958.html" />
+<rdf:li rdf:resource="http://blog.scheme-a.com/mt/archives/000957.html" />
+<rdf:li rdf:resource="http://blog.scheme-a.com/mt/archives/000956.html" />
+<rdf:li rdf:resource="http://blog.scheme-a.com/mt/archives/000955.html" />
+<rdf:li rdf:resource="http://blog.scheme-a.com/mt/archives/000954.html" />
+<rdf:li rdf:resource="http://blog.scheme-a.com/mt/archives/000953.html" />
+<rdf:li rdf:resource="http://blog.scheme-a.com/mt/archives/000952.html" />
+<rdf:li rdf:resource="http://blog.scheme-a.com/mt/archives/000951.html" />
+<rdf:li rdf:resource="http://blog.scheme-a.com/mt/archives/000950.html" />
+<rdf:li rdf:resource="http://blog.scheme-a.com/mt/archives/000948.html" />
+</rdf:Seq>
+</items>
+
+</channel>
+
+<item rdf:about="http://blog.scheme-a.com/mt/archives/000963.html">
+<title>リニューアル致します</title>
+<link>http://blog.scheme-a.com/mt/archives/000963.html</link>
+<description>約一年ほどここを中心にあっちゃこっちゃでサイトをやって参りましたが、そろそろなれてもきたのでリニューアルもかねて以下のサイトに全てまとめることとしました。 scheme-a_design blog Movable Typeのバージョンアップが主な目的ですが、デザイン等も手直しして新たにテンプレートも入れ替えました。HINAGATAさんに感謝です。 それでは今後ともよろしくお願い致します。...</description>
+<dc:subject>管理用</dc:subject>
+<dc:creator>bo_more</dc:creator>
+<dc:date>2004-12-12T16:21:37+09:00</dc:date>
+</item>
+<item rdf:about="http://blog.scheme-a.com/mt/archives/000962.html">
+<title>洪水ハザードマップ、市町村に義務づけ…国交省方針</title>
+<link>http://blog.scheme-a.com/mt/archives/000962.html</link>
+<description>YOMIURI ON-LINE / 社会 ようやく国交省も重い腰をあげたというか、水の被害がやっと認められたというか。しっかりやってもらいたいものです。...</description>
+<dc:subject>News and Topic</dc:subject>
+<dc:creator>bo_more</dc:creator>
+<dc:date>2004-12-10T13:30:28+09:00</dc:date>
+</item>
+<item rdf:about="http://blog.scheme-a.com/mt/archives/000961.html">
+<title>クラッキングか？</title>
+<link>http://blog.scheme-a.com/mt/archives/000961.html</link>
+<description> イヤーセット -Sony Style ソニースタイルさんのページですが、商品写真がおかしいですねえ。 舌のほうの、DR-E931S10の部分。下半身が（多分）無意味にモザイクになっている女の子の写真になってます。リンクをたどると正常な製品写真となりますが。はて？...</description>
+<dc:subject>Internet</dc:subject>
+<dc:creator>bo_more</dc:creator>
+<dc:date>2004-12-10T02:28:25+09:00</dc:date>
+</item>
+<item rdf:about="http://blog.scheme-a.com/mt/archives/000960.html">
+<title>amadana、天然素材「竹」を使った“美しい”ポータブルDVD</title>
+<link>http://blog.scheme-a.com/mt/archives/000960.html</link>
+<description> ITmedia ライフスタイル：amadana、天然素材「竹」を使った“美しい”ポータブルDVD 確かにきれいなんだけど、果たして屋外や出先でDVDを見たいと思うような人が単機能のポータブルDVDプレイヤーを買うのだろうかなあ、とか疑問に思ったりして。...</description>
+<dc:subject>digital gadget</dc:subject>
+<dc:creator>bo_more</dc:creator>
+<dc:date>2004-12-08T15:01:39+09:00</dc:date>
+</item>
+<item rdf:about="http://blog.scheme-a.com/mt/archives/000959.html">
+<title>SunriseBrowser</title>
+<link>http://blog.scheme-a.com/mt/archives/000959.html</link>
+<description>SunriseBrowser SunriseBrowser(サンライズブラウザー)はWebクリエイタをターゲットユーザとしたMac OS X専用Webブラウザです。 開発ベースはXCodeによるCocoa/Objective-C。 WebKitを用いているためレンダリングエンジンはKHTML（Safariと同一)。 とのこと。ずいぶんとMac用のブラウザーはにぎやかになってますね。...</description>
+<dc:subject>Macintosh</dc:subject>
+<dc:creator>bo_more</dc:creator>
+<dc:date>2004-12-06T07:18:49+09:00</dc:date>
+</item>
+<item rdf:about="http://blog.scheme-a.com/mt/archives/000958.html">
+<title>2Way Lignt Brief @国立商店</title>
+<link>http://blog.scheme-a.com/mt/archives/000958.html</link>
+<description> 国立商店@2Way Light Brief 最近鞄を新しくしようかな、と画策中。 今、ZEROの小さいやつを使って入るんですが気に入ってはいるもののA4の書類も入らないので悩み中。 ZEROのブリーフにするか、PORTERのブリーフにするかと考えてましたが、これもいいですねえ。一応候補にしておこう。...</description>
+<dc:subject>fashion</dc:subject>
+<dc:creator>bo_more</dc:creator>
+<dc:date>2004-12-04T09:04:11+09:00</dc:date>
+</item>
+<item rdf:about="http://blog.scheme-a.com/mt/archives/000957.html">
+<title>MT4i v2.0β5仮公開</title>
+<link>http://blog.scheme-a.com/mt/archives/000957.html</link>
+<description>talk to oneself 2: MT4i v2.0β5仮公開 年末のリニューアル予定（あくまで予定）に合わせて、情報収集しよっと。...</description>
+<dc:subject>MovableType</dc:subject>
+<dc:creator>bo_more</dc:creator>
+<dc:date>2004-12-03T16:05:18+09:00</dc:date>
+</item>
+<item rdf:about="http://blog.scheme-a.com/mt/archives/000956.html">
+<title>movable type 3.1日本語版</title>
+<link>http://blog.scheme-a.com/mt/archives/000956.html</link>
+<description>Movable Type Publishing Platform ついに提供開始ですね。これを機に、入れ替えるかな。...</description>
+<dc:subject>MovableType</dc:subject>
+<dc:creator>bo_more</dc:creator>
+<dc:date>2004-12-01T13:27:41+09:00</dc:date>
+</item>
+<item rdf:about="http://blog.scheme-a.com/mt/archives/000955.html">
+<title>capty dvd vcd 2.0.5</title>
+<link>http://blog.scheme-a.com/mt/archives/000955.html</link>
+<description>株式会社ピクセラ --Capty DVD/VCD Ver.2.0 -- &apos;04 11.29 Ver. 2.0.5 ● ご使用の環境によって、アプリケーションが不正終了していた不具合を解消しました。 ● MIDI形式のファイルを取り扱えない様に変更しました。...</description>
+<dc:subject>Macintosh</dc:subject>
+<dc:creator>bo_more</dc:creator>
+<dc:date>2004-12-01T13:18:27+09:00</dc:date>
+</item>
+<item rdf:about="http://blog.scheme-a.com/mt/archives/000954.html">
+<title>SEX</title>
+<link>http://blog.scheme-a.com/mt/archives/000954.html</link>
+<description> 【ヤンサンWEB〓作品紹介〓SEX 上條淳士 な、なんと！！上条淳士のSEXが全7巻発売！？当時単行本で確か1巻しかでてないんですよね？TO-Yファンだった私（多分中学生の頃）は上条淳士にぞっこんでしたよ。ああ、やっとよめるんだあ。うれしー。...</description>
+<dc:subject>hobby</dc:subject>
+<dc:creator>bo_more</dc:creator>
+<dc:date>2004-12-01T13:11:40+09:00</dc:date>
+</item>
+<item rdf:about="http://blog.scheme-a.com/mt/archives/000953.html">
+<title>trusty rack</title>
+<link>http://blog.scheme-a.com/mt/archives/000953.html</link>
+<description> 『Trusty』シリーズ XServe用のサーバラック。個人事務所など向けでしょうか。ちょっとメモ。...</description>
+<dc:subject>Macintosh</dc:subject>
+<dc:creator>bo_more</dc:creator>
+<dc:date>2004-12-01T13:07:29+09:00</dc:date>
+</item>
+<item rdf:about="http://blog.scheme-a.com/mt/archives/000952.html">
+<title>snapndrag 1.5.1</title>
+<link>http://blog.scheme-a.com/mt/archives/000952.html</link>
+<description> SnapNDrag for Mac OS X - Screen Capture Made Easy (and Free!) 1.5.1 (November 30, 2004) - Cross-hair for capture by Selection now works across multiple screens - Workaround an issue with EasyCrop not launching correctly when sending captured...</description>
+<dc:subject>Macintosh</dc:subject>
+<dc:creator>bo_more</dc:creator>
+<dc:date>2004-12-01T13:03:24+09:00</dc:date>
+</item>
+<item rdf:about="http://blog.scheme-a.com/mt/archives/000951.html">
+<title>konfabulator 1.8.1</title>
+<link>http://blog.scheme-a.com/mt/archives/000951.html</link>
+<description> Konfabulator! Macintosh - Version 1.8.1 - 11/24/04 * Upgraded the URL object to support POSTing, outputting to a file and returning the HTTP response code (see the Release Notes). * Added missing system variables system.desktopFolder and system.userDesktopFolder. * Fixed...</description>
+<dc:subject>Macintosh</dc:subject>
+<dc:creator>bo_more</dc:creator>
+<dc:date>2004-12-01T13:02:11+09:00</dc:date>
+</item>
+<item rdf:about="http://blog.scheme-a.com/mt/archives/000950.html">
+<title>moma online shop japan</title>
+<link>http://blog.scheme-a.com/mt/archives/000950.html</link>
+<description> MoMA category - ストアフロント とりあえずブックマーク。帰ってからゆっくり覗いてみます。...</description>
+<dc:subject>Art and Design</dc:subject>
+<dc:creator>bo_more</dc:creator>
+<dc:date>2004-11-30T12:34:21+09:00</dc:date>
+</item>
+<item rdf:about="http://blog.scheme-a.com/mt/archives/000948.html">
+<title>AQUARIUM</title>
+<link>http://blog.scheme-a.com/mt/archives/000948.html</link>
+<description> AssistOn / AQUARIUM アクアリウムといってもこれは靴べら。なーんとなくアシストオンのサイトを覗いていたら見つけました。ちょっとびびっときちゃったかも。いいわあ。...</description>
+<dc:subject>Art and Design</dc:subject>
+<dc:creator>bo_more</dc:creator>
+<dc:date>2004-11-25T12:57:56+09:00</dc:date>
+</item>
+
+
+</rdf:RDF>
